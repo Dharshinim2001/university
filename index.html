@@ -1,0 +1,242 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @media screen and (max-width: 600px) {}
+
+        body,
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .collegeview {
+            opacity: 0.5;
+        }
+
+        .textinimage {
+            position: absolute;
+            position: absolute;
+            top: 250px;
+            left: 100px;
+            font-size: 2.5rem;
+            color: #145c87;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .imagetext {
+
+            position: absolute;
+            top: 400px;
+            left: 350px;
+            font-size: 30px;
+            color: rgb(255, 0, 21);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .subtextimage {
+            top: 450px;
+            left: 660px;
+            position: absolute;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: rgb(10, 40, 132);
+        }
+
+        ul.b {
+            list-style-type: square;
+        }
+
+        .Provisional {
+            color: green;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .general {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .address {
+            font-family: Arial, Helvetica, sans-serif;
+            column-count: 3;
+        }
+
+        table,
+        th,
+        td {
+        
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+
+        .quota {
+            padding: 6px;
+            color: rgb(0, 136, 255);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>College Counseling Services </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="collegeranking.html">College Ranking</a></li>
+                <li><a href="cutoff.html">Cut Off</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <img class="collegeview"
+        src="/images/university.jpg"
+        height="800px" width="100%">
+
+    <img class="collegeview" src="/images/university 1.jpg"
+        height="800px" width="100%">
+    <img class="collegeview" src="/images/university 2.jpg"
+        height="800px" width="100%">
+    <div class="imagetext"><b>Overview of Counselling Process</b></div>
+    <script>
+        var a = 0;
+        slider();
+        function slider() {
+            var i;
+            var y = document.getElementsByClassName("collegeview");
+            for (i = 0; i < y.length; i++) {
+                y[i].style.display = "none";
+
+            }
+            a++;
+            if (a > y.length) { a = 1 }
+            y[a - 1].style.display = "block";
+            setTimeout(slider, 3000);
+        }
+    </script>
+    <div class="textinimage">Empowerly navigates your journey to top colleges with a
+        <b> 94% success rate.</b>
+    </div>
+
+    <div class="imagetext"><b>Overview of Counselling </b></div>
+    <div class="subtextimage">
+        <ul class="b">
+            <li><b>Registration</li><br>
+            <li> Assigning Random Number</li><br>
+            <li> Certificate Verification</li><br>
+            <li>Publication of Rank list</li><br>
+            <li> Counselling for Special Reservation</li><br>
+            <li>General Counselling</b></li>
+        </ul>
+    </div>
+
+    </div><br>
+    <p class="Provisional">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Provisional allotment has been released for upward
+            movement third round candidates,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; you may login and download the allotment
+            order.</b></p>
+    <br>
+    <p class="general">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;General counselling process details
+        has been added as table for quick reference (same details are available in counselling schedule), please make
+        sure you keep watching these details to know the deadline,&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; know the eligibility for respective rounds please check the schedule.</p>
+
+    <br><br>
+    <table width="100%">
+        <tr>
+            <th>Round</th>
+            <th>Current step</th>
+            <th>current step end date</th>
+        </tr>
+        <tr>
+            <td>Round 1</td>
+            <td>Provisional allotment released for upward opted candidates</td>
+            <td> 09-08-2023</td>
+        </tr>
+
+        <tr>
+            <td>Round 2</td>
+            <td>Provisional allotment released for upward opted candidates</td>
+            <td> 22-08-2023</td>
+        </tr>
+        <tr>
+            <td>Round 3</td>
+            <td>Provisional allotment released for upward opted candidates</td>
+            <td> 03-09-2023</td>
+        </tr>
+
+    </table><br><br>
+
+    <center>
+        <p class="quota">General Academic Seat Matrix as on 11-09-2023 (After SCA to SC Conversion Counselling)</p>
+        <p class="quota"> General Vocational Seat Matrix as on 11-09-2023 (After SCA to SC Conversion Counselling)</p>
+        <p class="quota"> Govt.Quota (7.5%) Academic Seat Matrix as on 11-09-2023 (After SCA to SC Conversion
+            Counselling)</p>
+        <p class="quota"> Govt.Quota (7.5%) Vocational Seat Matrix as on 11-09-2023 (After SCA to SC Conversion
+            Counselling)</p>
+    </center><br><br>
+
+      
+    <footer>
+        <h4>For all your queries call us on a Toll Free Number:<br>
+            1800-425-0110</h4>
+        <pre>
+                <div class="address">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-home" aria-hidden="true"></i>Address <br>
+                   Directorate of Technical Education (DoTE)
+                   53, Sardar Patel Road Guindy,Chennai - 600 025
+
+                 <div class="email">&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa fa-envelope" aria-hidden="true"></i> tneacare@gmail.com</div> 
+                        
+                  <div class="phone"> <i class="fa fa-phone-square" aria-hidden="true"></i> 044-22351014,<br>    044-22351015</div>
+        </pre>
+        <p> @2023, TNEA</p>
+    </footer>
+</body>
+
+</html>
